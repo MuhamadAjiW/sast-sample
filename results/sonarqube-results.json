@@ -1,0 +1,77 @@
+{
+    "findings": [
+        {
+            "severity": "MINOR",
+            "message": "Prefer `node:child_process` over `child_process`.",
+            "filePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/cases/command-injection.ts",
+            "textRange": {
+                "startLine": 1,
+                "endLine": 1
+            }
+        },
+        {
+            "severity": "MAJOR",
+            "message": "Member 'apiKey' is never reassigned; mark it as `readonly`.",
+            "filePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/cases/hardcoded-secrets.ts",
+            "textRange": {
+                "startLine": 7,
+                "endLine": 7
+            }
+        },
+        {
+            "severity": "MAJOR",
+            "message": "Member 'dbConnection' is never reassigned; mark it as `readonly`.",
+            "filePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/cases/hardcoded-secrets.ts",
+            "textRange": {
+                "startLine": 8,
+                "endLine": 8
+            }
+        },
+        {
+            "severity": "MINOR",
+            "message": "Prefer `node:fs` over `fs`.",
+            "filePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/cases/path-traversal.ts",
+            "textRange": {
+                "startLine": 1,
+                "endLine": 1
+            }
+        },
+        {
+            "severity": "MINOR",
+            "message": "Remove this unused import of 'path'.",
+            "filePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/cases/path-traversal.ts",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2
+            }
+        },
+        {
+            "severity": "MINOR",
+            "message": "Prefer `node:path` over `path`.",
+            "filePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/cases/path-traversal.ts",
+            "textRange": {
+                "startLine": 2,
+                "endLine": 2
+            }
+        },
+        {
+            "severity": "BLOCKER",
+            "message": "Make sure this PostgreSQL database password gets changed and removed from the code.",
+            "filePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/cases/env-secrets.ts",
+            "textRange": {
+                "startLine": 9,
+                "endLine": 9
+            }
+        },
+        {
+            "severity": "BLOCKER",
+            "message": "Make sure this PostgreSQL database password gets changed and removed from the code.",
+            "filePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/cases/hardcoded-secrets.ts",
+            "textRange": {
+                "startLine": 19,
+                "endLine": 19
+            }
+        }
+    ],
+    "findingsCount": 8
+}
