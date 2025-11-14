@@ -1,0 +1,131 @@
+{
+    "success": true,
+    "issueCount": 4,
+    "issues": [
+        {
+            "id": "javascript/HardcodedNonCryptoSecret",
+            "title": "Hardcoded Non-Cryptographic Secret",
+            "severity": "high",
+            "ruleId": "javascript/HardcodedNonCryptoSecret",
+            "dataflow": [
+                {
+                    "Position": 0,
+                    "FilePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/cases/hardcoded-secrets.ts",
+                    "FlowRange": {
+                        "Start": {
+                            "Line": 1,
+                            "Character": 23
+                        },
+                        "End": {
+                            "Line": 1,
+                            "Character": 45
+                        }
+                    },
+                    "Content": "export const API_KEY = 'sk-1234567890abcdef';"
+                }
+            ],
+            "cwes": [
+                "CWE-547"
+            ],
+            "filePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/cases/hardcoded-secrets.ts",
+            "line": 2,
+            "column": 14,
+            "message": "Hardcoded Non-Cryptographic Secret: Avoid hardcoding values that are meant to be secret. Found a har...",
+            "fingerPrint": "c4204708.883ce888.ca07ea43.d7919eeb.a221c3d1.f7edcf51.ea4b1c47.0379e947.ae77ea27.883ce888.ca07ea43.c559ebce.4fc5849b.5fce695c.ea4b1c47.89d75565"
+        },
+        {
+            "id": "javascript/HardcodedNonCryptoSecret",
+            "title": "Hardcoded Non-Cryptographic Secret",
+            "severity": "high",
+            "ruleId": "javascript/HardcodedNonCryptoSecret",
+            "dataflow": [
+                {
+                    "Position": 0,
+                    "FilePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/cases/hardcoded-secrets.ts",
+                    "FlowRange": {
+                        "Start": {
+                            "Line": 12,
+                            "Character": 17
+                        },
+                        "End": {
+                            "Line": 12,
+                            "Character": 60
+                        }
+                    },
+                    "Content": "      secretKey: 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY'"
+                }
+            ],
+            "cwes": [
+                "CWE-547"
+            ],
+            "filePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/cases/hardcoded-secrets.ts",
+            "line": 13,
+            "column": 7,
+            "message": "Hardcoded Non-Cryptographic Secret: Avoid hardcoding values that are meant to be secret. Found a har...",
+            "fingerPrint": "97f34c5b.3f481afb.cbc6d533.e052b9a9.79a7d027.fcf3002d.577186ba.69d9dece.cae0f716.3f481afb.bf1932af.e052b9a9.79a7d027.fcf3002d.cd61fc56.6a02e9b1"
+        },
+        {
+            "id": "javascript/HardcodedNonCryptoSecret",
+            "title": "Hardcoded Non-Cryptographic Secret",
+            "severity": "high",
+            "ruleId": "javascript/HardcodedNonCryptoSecret",
+            "dataflow": [
+                {
+                    "Position": 0,
+                    "FilePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/cases/hardcoded-secrets.ts",
+                    "FlowRange": {
+                        "Start": {
+                            "Line": 11,
+                            "Character": 17
+                        },
+                        "End": {
+                            "Line": 11,
+                            "Character": 40
+                        }
+                    },
+                    "Content": "      accessKey: 'AKIAIOSFODNN7EXAMPLE',"
+                }
+            ],
+            "cwes": [
+                "CWE-547"
+            ],
+            "filePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/cases/hardcoded-secrets.ts",
+            "line": 12,
+            "column": 7,
+            "message": "Hardcoded Non-Cryptographic Secret: Avoid hardcoding values that are meant to be secret. Found a har...",
+            "fingerPrint": "cae0f716.3f481afb.bf1932af.e052b9a9.79a7d027.fcf3002d.a1046780.6a02e9b1.cae0f716.3f481afb.bf1932af.e052b9a9.79a7d027.fcf3002d.a1046780.6a02e9b1"
+        },
+        {
+            "id": "javascript/NoHardcodedPasswords",
+            "title": "Use of Hardcoded Passwords",
+            "severity": "medium",
+            "ruleId": "javascript/NoHardcodedPasswords",
+            "dataflow": [
+                {
+                    "Position": 0,
+                    "FilePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/cases/hardcoded-secrets.ts",
+                    "FlowRange": {
+                        "Start": {
+                            "Line": 2,
+                            "Character": 13
+                        },
+                        "End": {
+                            "Line": 2,
+                            "Character": 31
+                        }
+                    },
+                    "Content": "export const DATABASE_PASSWORD = 'admin123';"
+                }
+            ],
+            "cwes": [
+                "CWE-798",
+                "CWE-259"
+            ],
+            "filePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/cases/hardcoded-secrets.ts",
+            "line": 3,
+            "column": 14,
+            "message": "Use of Hardcoded Passwords: Do not hardcode passwords in code. Found hardcoded password used in DATA...",
+            "fingerPrint": "c4204708.fb31f608.8b18f948.d7919eeb.c3cb215f.f7edcf51.ea4b1c47.9a05b657.c4204708.fb31f608.8b18f948.d7919eeb.c3cb215f.f7edcf51.ea4b1c47.9a05b657"
+        }
+    ]
+}
