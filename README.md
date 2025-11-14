@@ -55,3 +55,22 @@ Run Snyk SAST scan:
 ```bash
 snyk code test
 ```
+
+## Testing with SonarQube
+
+1. Start SonarQube:
+
+   ```bash
+   docker-compose up -d
+   ```
+
+2. Wait for SonarQube to be ready (check <http://localhost:9000>, default credentials: admin/admin)
+
+3. Install dependencies and run analysis:
+
+   ```bash
+   pnpm install
+   pnpm run sonar
+   ```
+
+4. View results at <http://localhost:9000>
