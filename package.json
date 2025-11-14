@@ -11,6 +11,10 @@
   "type": "module",
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "ai": "^3.4.32",
+    "@ai-sdk/openai": "^0.0.66"
+  },
   "devDependencies": {
     "@types/node": "^22.15.29",
     "tsx": "^4.19.4",

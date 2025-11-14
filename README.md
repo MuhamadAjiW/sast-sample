@@ -24,6 +24,10 @@ This TypeScript project contains intentionally vulnerable code to test Snyk's St
 - API keys, passwords, and credentials in source code
 - Database connection strings with embedded credentials
 
+### 6. Prompt Injection (`src/cases/prompt-injection.ts`)
+- Direct user input concatenation to AI prompts
+- Unsafe template construction allowing instruction override
+
 ## Usage
 
 ```bash
