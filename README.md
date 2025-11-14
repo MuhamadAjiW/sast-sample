@@ -1,4 +1,4 @@
-# Snyk SAST Test Cases
+# SAST Test Cases
 
 This TypeScript project contains intentionally vulnerable code to test Snyk's Static Application Security Testing (SAST) capabilities and compare it to flat unconfigured SonarQube.
 
