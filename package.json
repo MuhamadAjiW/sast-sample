@@ -1,0 +1,19 @@
+{
+  "name": "snyk-test",
+  "version": "1.0.0",
+  "description": "## Setting Up",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
