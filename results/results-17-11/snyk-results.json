@@ -1,0 +1,114 @@
+{ 
+  "success": true,
+  "issueCount": 12,
+  "issues": [
+    {
+      "id": "javascript/CommandInjection",
+      "title": "Command Injection",
+      "severity": "high",
+      "filePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/routes/command-injection.ts",
+      "line": 23,
+      "message": "Command Injection: Unsanitized input from an HTTP parameter flows into node:child_process.exec",
+      "cwes": ["CWE-78"]
+    },
+    {
+      "id": "javascript/CommandInjection",
+      "title": "Command Injection",
+      "severity": "high",
+      "filePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/routes/command-injection.ts",
+      "line": 43,
+      "message": "Command Injection: Unsanitized input from an HTTP parameter flows into node:child_process.exec",
+      "cwes": ["CWE-78"]
+    },
+    {
+      "id": "javascript/HardcodedNonCryptoSecret",
+      "title": "Hardcoded Non-Cryptographic Secret",
+      "severity": "high",
+      "filePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/cases/hardcoded-secrets.ts",
+      "line": 2,
+      "message": "Hardcoded Non-Cryptographic Secret: Avoid hardcoding values that are meant to be secret.",
+      "cwes": ["CWE-547"]
+    },
+    {
+      "id": "javascript/HardcodedNonCryptoSecret",
+      "title": "Hardcoded Non-Cryptographic Secret",
+      "severity": "high",
+      "filePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/cases/hardcoded-secrets.ts",
+      "line": 13,
+      "message": "Hardcoded Non-Cryptographic Secret: Avoid hardcoding values that are meant to be secret.",
+      "cwes": ["CWE-547"]
+    },
+    {
+      "id": "javascript/HardcodedNonCryptoSecret",
+      "title": "Hardcoded Non-Cryptographic Secret",
+      "severity": "high",
+      "filePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/cases/hardcoded-secrets.ts",
+      "line": 12,
+      "message": "Hardcoded Non-Cryptographic Secret: Avoid hardcoding values that are meant to be secret.",
+      "cwes": ["CWE-547"]
+    },
+    {
+      "id": "javascript/NoHardcodedCredentials",
+      "title": "Use of Hardcoded Credentials",
+      "severity": "low",
+      "filePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/cases/sql-injection.ts",
+      "line": 8,
+      "message": "Use of Hardcoded Credentials: Do not hardcode credentials in code.",
+      "cwes": ["CWE-798"]
+    },
+    {
+      "id": "javascript/NoHardcodedPasswords",
+      "title": "Use of Hardcoded Passwords",
+      "severity": "medium",
+      "filePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/cases/hardcoded-secrets.ts",
+      "line": 3,
+      "message": "Use of Hardcoded Passwords: Do not hardcode passwords in code.",
+      "cwes": ["CWE-798", "CWE-259"]
+    },
+    {
+      "id": "javascript/NoHardcodedPasswords",
+      "title": "Use of Hardcoded Passwords",
+      "severity": "medium",
+      "filePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/cases/sql-injection.ts",
+      "line": 9,
+      "message": "Use of Hardcoded Passwords: Do not hardcode passwords in code.",
+      "cwes": ["CWE-798", "CWE-259"]
+    },
+    {
+      "id": "javascript/PT",
+      "title": "Path Traversal",
+      "severity": "high",
+      "filePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/routes/path-traversal.ts",
+      "line": 20,
+      "message": "Path Traversal: Unsanitized input flows into node:fs.readFileSync",
+      "cwes": ["CWE-23"]
+    },
+    {
+      "id": "javascript/PT",
+      "title": "Path Traversal",
+      "severity": "high",
+      "filePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/routes/path-traversal.ts",
+      "line": 39,
+      "message": "Path Traversal: Unsanitized input flows into node:fs.readFileSync",
+      "cwes": ["CWE-23"]
+    },
+    {
+      "id": "javascript/Sqli",
+      "title": "SQL Injection",
+      "severity": "high",
+      "filePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/routes/sql-injection.ts",
+      "line": 21,
+      "message": "SQL Injection: Unsanitized input flows into query",
+      "cwes": ["CWE-89"]
+    },
+    {
+      "id": "javascript/Sqli",
+      "title": "SQL Injection",
+      "severity": "high",
+      "filePath": "/Users/muhamad.aji.wibisono/Desktop/Main/codespace/tertiary/Snyk-sample/src/routes/sql-injection.ts",
+      "line": 46,
+      "message": "SQL Injection: Unsanitized input flows into query",
+      "cwes": ["CWE-89"]
+    }
+  ]
+}
