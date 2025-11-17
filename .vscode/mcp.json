@@ -16,7 +16,7 @@
       ],
       "env": {
         "SONARQUBE_URL": "http://host.docker.internal:9000",
-        "SONARQUBE_TOKEN": "sqa_27a5814b78364605553cc62bcf54e861352a0c00",
+        "SONARQUBE_TOKEN": "sqa_5d75bb5b9f28dd9c7f8676413c7d18d90fba4601",
         "SONARQUBE_IDE_PORT": "64120"
       }
     }

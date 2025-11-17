@@ -9,7 +9,8 @@
     "dev": "tsx watch src/index.ts",
     "lint": "biome check .",
     "lint:fix": "biome check . --fix --unsafe",
-    "sonar": "sonar-scanner"
+    "sonar": "sonar-scanner",
+    "docker:clean": "rm -rf ./postgresql ./postgresql_data ./sonarqube ./test_postgresql_data && mkdir -p ./postgresql ./postgresql_data ./sonarqube/data ./sonarqube/extensions ./sonarqube/logs ./sonarqube/conf ./test_postgresql_data"
   },
   "type": "module",
   "author": "",

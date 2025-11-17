@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   sonarqube:
-    image: sonarqube:10.7-community
+    image: sonarqube:25.11.0.114957-community
     container_name: sonarqube
     depends_on:
       - db
