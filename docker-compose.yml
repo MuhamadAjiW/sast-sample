@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   sonarqube:
-    image: sonarqube:10.6-community
+    image: sonarqube:10.7-community
     container_name: sonarqube
     depends_on:
       - db
@@ -34,12 +34,28 @@ services:
     networks:
       - sonarnet
 
+  test-db:
+    image: postgres:16
+    container_name: test-postgresql
+    environment:
+      POSTGRES_USER: testuser
+      POSTGRES_PASSWORD: testpass
+      POSTGRES_DB: testdb
+    volumes:
+      - test_postgresql_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5433:5432"
+    networks:
+      - sonarnet
+
 volumes:
   sonarqube_data:
   sonarqube_extensions:
   sonarqube_logs:
   postgresql:
   postgresql_data:
+  test_postgresql_data:
 
 networks:
   sonarnet:

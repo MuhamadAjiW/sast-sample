@@ -1,22 +1,22 @@
-import * as fs from 'fs';
-import * as path from 'path';
+import * as fs from "node:fs";
+import * as path from "node:path";
 
 // Path traversal vulnerabilities
 export function readUserFile(filename: string) {
-  return fs.readFileSync(filename, 'utf8');
+	return fs.readFileSync(filename, "utf8");
 }
 
 export function unsafeFileAccess(userPath: string) {
-  const fullPath = '/uploads/' + userPath;
-  return fs.readFileSync(fullPath);
+	const fullPath = `/uploads/${userPath}`;
+	return fs.readFileSync(fullPath);
 }
 
 export class FileService {
-  getFile(relativePath: string) {
-    return fs.readFileSync('./files/' + relativePath);
-  }
-  
-  deleteFile(filename: string) {
-    fs.unlinkSync(filename);
-  }
+	getFile(relativePath: string) {
+		return fs.readFileSync(`./files/${relativePath}`);
+	}
+
+	deleteFile(filename: string) {
+		fs.unlinkSync(filename);
+	}
 }

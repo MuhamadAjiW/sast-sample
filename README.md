@@ -6,8 +6,11 @@ This TypeScript project contains intentionally vulnerable code to test Snyk's St
 
 ### 1. SQL Injection (`src/cases/sql-injection.ts`)
 
+- Actual PostgreSQL connections with vulnerable queries
 - Unsafe query construction with string concatenation
 - Direct user input in SQL queries
+- Dynamic table/column name injection
+- Template literal injection
 
 ### 2. Cross-Site Scripting (XSS) (`src/cases/xss-vulnerability.ts`)
 
@@ -42,11 +45,27 @@ This TypeScript project contains intentionally vulnerable code to test Snyk's St
 
 ## Usage
 
-```bash
-npm run build  # Compile TypeScript
-npm run start  # Run the application
-npm run dev    # Run in development mode
-```
+1. Start the databases:
+   ```bash
+   docker-compose up -d
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the application:
+   ```bash
+   npm run build  # Compile TypeScript
+   npm run start  # Run the application
+   npm run dev    # Run in development mode
+   ```
+
+The test PostgreSQL database will be available on port 5433 with:
+- Database: `testdb`
+- Username: `testuser`
+- Password: `testpass`
 
 ## Testing with Snyk
 
