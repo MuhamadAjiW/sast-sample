@@ -10,3 +10,5 @@ sonarqube/
 postgresql/
 postgresql_data/
 test_postgresql_data/
+
+*.ignore
